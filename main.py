@@ -29,7 +29,8 @@ def main():
                 running = False
 
         engine.handle_input()
-        engine.update()
+        engine.update(SCREEN)
+        SCREEN.fill((0, 0, 0))
         engine.render(SCREEN)
 
         pygame.display.flip()
